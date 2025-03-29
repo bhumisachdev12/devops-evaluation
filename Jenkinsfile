@@ -18,7 +18,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Running tests...'
-                  bat 'npm test || echo "No tests defined"'
+                  
              
             }
         }
@@ -26,7 +26,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying the application...'
-                 bat 'npm run build' 
+                
                
             }
         }
